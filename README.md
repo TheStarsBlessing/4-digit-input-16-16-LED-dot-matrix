@@ -16,26 +16,29 @@
 时钟信号通过一个jk触发器（74hc112）进行二分频，Q与Q#分别作为前端一个与后端两个74hc161(可预置四位二进制计数器)的时钟信号，在第一个时钟周期下降沿，前端74hc161对输入第一个4bit数据进行锁存：在第二个时钟周期下降沿，后端输入侧74hc161对前端进行读取并锁存，输出侧74hc161对输入信号进行锁存，此时后端74hc161输出信号输入至74hc154（4-16线译码器）进行译码，最后输入侧通过两个74hc540进行反相控制列，输出侧控制行，在（行/列）处点亮一个LED。
 proteus仿真如下图所示：
 
-![2024-11-17_000128.png](//image.lceda.cn/oshwhub/649a1d17a6c6422b9219931c9b3ac4e5.png)
+![image](https://github.com/user-attachments/assets/735195a7-ac22-46fe-a42a-20a7deaf1bd9)
+
 ## 注意事项
 1.彩色丝印若发生异常重叠，请剪切后粘至原位置，再次渲染即可恢复。
 2.本工程原则上禁止商用，但允许在删除所有彩色丝印图片后进行商用。（依据原神周边相关规定，带有官图的产品不可用商用，具体规定请参考https://m.bilibili.com/opus/596519933203383519 ）
 ## 参考图
 原理图
-![SCH_16_16LED_2024-11-17_00(1).png](//image.lceda.cn/oshwhub/cc734302e5e647d4b7a368dd0ffff092.png)
+
+![image](https://github.com/user-attachments/assets/23c05919-b60d-4cb8-acab-0bb339ca4122)
 
 仿真图
 
-![3D_16_16LED_1_2025-04-03.png](https://image.lceda.cn/oshwhub/pullImage/b9507290e20a43c3b46bb07145def999.png)
+![image](https://github.com/user-attachments/assets/93607fa6-1880-44a1-9f7d-a64ffa692d83)
+![image](https://github.com/user-attachments/assets/3eabc957-451e-42ca-87de-0a001bb9da79)
 
-![666.png](https://image.lceda.cn/oshwhub/pullImage/6dcd45e8d5364ce8aff3f8985aa6ab89.png)
 ## 实物图
 
-![微信图片_20250404000452.jpg](https://image.lceda.cn/oshwhub/pullImage/df0a0603b7d04e6f968344df1b82a6c8.jpg)
+![df0a0603b7d04e6f968344df1b82a6c8](https://github.com/user-attachments/assets/e6b4840c-002c-47d5-a21c-71110de96d46)
+![微信图片_20250403235254](https://github.com/user-attachments/assets/30cd263e-884e-4946-a881-92ecdb2a41e3)
 
-![微信图片_20250404000504.jpg](https://image.lceda.cn/oshwhub/pullImage/ba674113d602409d9451e9b98dbed76b.jpg)
 与TD4组合测试
-![微信图片_20250404000537.jpg](https://image.lceda.cn/oshwhub/pullImage/0a00d27df0024031ba9ac64c4244a689.jpg)
+
+![微信图片_20250404000537](https://github.com/user-attachments/assets/78bde76b-c7c9-4288-8ff3-8ffa084b59ef)
 
 ## 版本更新
 2024.11.18  调整了部分丝印
