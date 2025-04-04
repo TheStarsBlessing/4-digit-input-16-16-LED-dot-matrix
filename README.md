@@ -4,7 +4,7 @@
 一个可以通过四位输入信号以2个时钟周期的速度驱动`16*16`led阵列的扫描式led显示板。
 这个简单的LED点阵是我为我的4位CPU（就是著名的TD4CPU）做的外设（4位CPU每个指令周期仅能输出4bit数据，因此需要将两个指令周期的信号合并起来才能驱动`16*16`的LED点阵），电路简单，板子大小在`100*100（mm）`以内，并添加了许多漂亮的图片，总体来说比较漂亮。
 
-本工程在立创开源平台也有发表，请参考https://oshwhub.com/the_starts-blessing/4-bit-input-1616led-dot-matrix
+本工程在立创开源平台也有发布，请参考https://oshwhub.com/the_starts-blessing/4-bit-input-1616led-dot-matrix
 
 ## 项目功能
 1.欣赏老婆们(划掉)（太刑了），感谢嘉立创的彩色丝印！
